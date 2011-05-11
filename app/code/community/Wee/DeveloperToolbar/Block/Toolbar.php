@@ -24,7 +24,7 @@ class Wee_DeveloperToolbar_Block_Toolbar extends Wee_DeveloperToolbar_Block_Temp
     protected $_items = array();
     
     protected $jsFiles = array(
-        'developertoolbar/jquery-1.4.2.min.js',
+        'developertoolbar/jquery-1.6.min.js',
         'developertoolbar/developertoolbar.js',
     );
 
