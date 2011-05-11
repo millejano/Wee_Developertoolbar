@@ -12,10 +12,10 @@
  * obtain it through the world-wide-web, please send an email
  * to license@magentocommerce.com so we can send you a copy immediately.
  *
- * @category    Cdb
- * @package     Cdb_DeveloperToolbar
- * @author      Stefan Wieczorek <stefan.wieczorek@codingbitch.de>
- * @copyright   Copyright (c) 2010 (http://www.codingbitch.de)
+ * @category    Wee
+ * @package     Wee_DeveloperToolbar
+ * @author      Stefan Wieczorek <info@mgt-modules.com>
+ * @copyright   Copyright (c) 2010 (http://www.mgt-modules.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
