@@ -1,6 +1,6 @@
 <?php
 
-class Cdb_DeveloperToolbar_Helper_Data extends Mage_Core_Helper_Abstract
+class Wee_DeveloperToolbar_Helper_Data extends Mage_Core_Helper_Abstract
 {
     public static function formatBytes($size, $praefix=true, $short= true) {
         if ($praefix === true) {

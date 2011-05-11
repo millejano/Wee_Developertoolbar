@@ -1,5 +1,5 @@
 <?php
-class Cdb_DeveloperToolbar_Model_Resource  extends Mage_Core_Model_Resource 
+class Wee_DeveloperToolbar_Model_Resource  extends Mage_Core_Model_Resource 
 {
     public function getConnection($name)
     {

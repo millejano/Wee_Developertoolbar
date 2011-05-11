@@ -19,15 +19,15 @@
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Cdb_DeveloperToolbar_Block_TabContainer_Info extends Cdb_DeveloperToolbar_Block_TabContainer
+class Wee_DeveloperToolbar_Block_TabContainer_Info extends Wee_DeveloperToolbar_Block_TabContainer
 {
     public function __construct($name) 
     {
         parent::__construct($name);
-        $this->addTab(new Cdb_DeveloperToolbar_Block_Tab_Request('request', 'Request'));
-        $this->addTab(new Cdb_DeveloperToolbar_Block_Tab_General('general', 'General'));
-        $this->addTab(new Cdb_DeveloperToolbar_Block_Tab_Blocks('blocks', 'Blocks'));
-        $this->addTab(new Cdb_DeveloperToolbar_Block_Tab_Config('config', 'Config'));
-        $this->addTab(new Cdb_DeveloperToolbar_Block_Tab_PhpInfo('phpinfo', 'PHP-Info'));
+        $this->addTab(new Wee_DeveloperToolbar_Block_Tab_Request('request', 'Request'));
+        $this->addTab(new Wee_DeveloperToolbar_Block_Tab_General('general', 'General'));
+        $this->addTab(new Wee_DeveloperToolbar_Block_Tab_Blocks('blocks', 'Blocks'));
+        $this->addTab(new Wee_DeveloperToolbar_Block_Tab_Config('config', 'Config'));
+        $this->addTab(new Wee_DeveloperToolbar_Block_Tab_PhpInfo('phpinfo', 'PHP-Info'));
     }
 }

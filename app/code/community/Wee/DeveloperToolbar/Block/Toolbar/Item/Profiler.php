@@ -19,12 +19,12 @@
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Cdb_DeveloperToolbar_Block_Toolbar_Item_Profiler extends Cdb_DeveloperToolbar_Block_Toolbar_Item
+class Wee_DeveloperToolbar_Block_Toolbar_Item_Profiler extends Wee_DeveloperToolbar_Block_Toolbar_Item
 {
     public function __construct($name, $label = '')
     {
         parent::__construct($name, $label);
         $this->setIcon(Mage::getDesign()->getSkinUrl('images/developertoolbar/profiler.png'));
-        $this->content = new Cdb_DeveloperToolbar_Block_TabContainer_Profiler('profiler');
+        $this->content = new Wee_DeveloperToolbar_Block_TabContainer_Profiler('profiler');
     }
 }

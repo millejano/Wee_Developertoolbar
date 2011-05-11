@@ -1,35 +1,35 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Cdb_DeveloperToolbar>
-            <version>1.0.0</version>
-        </Cdb_DeveloperToolbar>
+        <Wee_DeveloperToolbar>
+            <version>1.0.1</version>
+        </Wee_DeveloperToolbar>
     </modules>
     <global>
         <blocks>
             <developertoolbar>
-                <class>Cdb_DeveloperToolbar_Block</class>
+                <class>Wee_DeveloperToolbar_Block</class>
             </developertoolbar>
             <developertoolbar_item>
-                <class>Cdb_DeveloperToolbar_Block_Toolbar_Item</class>
+                <class>Wee_DeveloperToolbar_Block_Toolbar_Item</class>
             </developertoolbar_item>
             <core>
                 <rewrite>
-                    <profiler>Cdb_DeveloperToolbar_Block_Profiler</profiler>
+                    <profiler>Wee_DeveloperToolbar_Block_Profiler</profiler>
                 </rewrite>
             </core>
         </blocks>
         <helpers>
             <developertoolbar>
                 <rewrite>
-                    <data>Cdb_DeveloperToolbar_Helper_Data</data>
+                    <data>Wee_DeveloperToolbar_Helper_Data</data>
                 </rewrite>
             </developertoolbar>
         </helpers>
         <models>
             <core>
                 <rewrite>
-                    <resource>Cdb_DeveloperToolbar_Model_Resource</resource>
+                    <resource>Wee_DeveloperToolbar_Model_Resource</resource>
                 </rewrite>
             </core>
         </models>
@@ -39,7 +39,7 @@
             <developertoolbar>
                 <use>standard</use>
                 <args>
-                    <module>Cdb_DeveloperToolbar</module>
+                    <module>Wee_DeveloperToolbar</module>
                     <frontName>developertoolbar</frontName>
                 </args>
             </developertoolbar>

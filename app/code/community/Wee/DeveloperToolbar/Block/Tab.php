@@ -19,7 +19,7 @@
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Cdb_DeveloperToolbar_Block_Tab extends Cdb_DeveloperToolbar_Block_Template
+class Wee_DeveloperToolbar_Block_Tab extends Wee_DeveloperToolbar_Block_Template
 {
     protected $name;
     protected $label;

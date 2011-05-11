@@ -19,12 +19,12 @@
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Cdb_DeveloperToolbar_Block_TabContainer_Profiler extends Cdb_DeveloperToolbar_Block_TabContainer
+class Wee_DeveloperToolbar_Block_TabContainer_Profiler extends Wee_DeveloperToolbar_Block_TabContainer
 {
     public function __construct($name) 
     {
         parent::__construct($name);
-        $this->addTab(new Cdb_DeveloperToolbar_Block_Tab_Profiler('profiler', 'Profiler'));
+        $this->addTab(new Wee_DeveloperToolbar_Block_Tab_Profiler('profiler', 'Profiler'));
     }
     
     public function getTimers()

@@ -19,7 +19,7 @@
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Cdb_DeveloperToolbar_Block_Toolbar extends Cdb_DeveloperToolbar_Block_Template
+class Wee_DeveloperToolbar_Block_Toolbar extends Wee_DeveloperToolbar_Block_Template
 {
     protected $_items = array();
     
@@ -35,15 +35,15 @@ class Cdb_DeveloperToolbar_Block_Toolbar extends Cdb_DeveloperToolbar_Block_Temp
     
     protected function _addDefaultItems()
     {
-        $this->_addItem(new Cdb_DeveloperToolbar_Block_Toolbar_Item_Version('version'));
-        $this->_addItem(new Cdb_DeveloperToolbar_Block_Toolbar_Item_Info('info', 'info'));
-        $this->_addItem(new Cdb_DeveloperToolbar_Block_Toolbar_Item_Profiler('profiler', 'profiler'));
-        $this->_addItem(new Cdb_DeveloperToolbar_Block_Toolbar_Item_Time('time'));
-        $this->_addItem(new Cdb_DeveloperToolbar_Block_Toolbar_Item_Memory('memory'));
-        $this->_addItem(new Cdb_DeveloperToolbar_Block_Toolbar_Item_Database('database'));    
+        $this->_addItem(new Wee_DeveloperToolbar_Block_Toolbar_Item_Version('version'));
+        $this->_addItem(new Wee_DeveloperToolbar_Block_Toolbar_Item_Info('info', 'info'));
+        $this->_addItem(new Wee_DeveloperToolbar_Block_Toolbar_Item_Profiler('profiler', 'profiler'));
+        $this->_addItem(new Wee_DeveloperToolbar_Block_Toolbar_Item_Time('time'));
+        $this->_addItem(new Wee_DeveloperToolbar_Block_Toolbar_Item_Memory('memory'));
+        $this->_addItem(new Wee_DeveloperToolbar_Block_Toolbar_Item_Database('database'));    
     }
     
-    protected function _addItem(Cdb_DeveloperToolbar_Block_Toolbar_Item $item)
+    protected function _addItem(Wee_DeveloperToolbar_Block_Toolbar_Item $item)
     {
         $this->_items[] = $item;    
     }

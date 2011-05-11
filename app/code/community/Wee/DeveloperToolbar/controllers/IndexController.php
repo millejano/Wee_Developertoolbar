@@ -1,6 +1,6 @@
 <?php
 
-class Cdb_DeveloperToolbar_IndexController extends Mage_Core_Controller_Front_Action
+class Wee_DeveloperToolbar_IndexController extends Mage_Core_Controller_Front_Action
 {
 	const SHOP_SCOPE = 'stores';
 	
