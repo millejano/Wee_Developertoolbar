@@ -1,0 +1,18 @@
+<div class="developerToolbar" id="developerToolbarContainer">
+  <img class="logo" src="<?php echo Mage::getDesign()->getSkinUrl('images/developertoolbar/logo.png'); ?>" alt="" />
+    <?php if ($this->getItems()): ?>
+    <ul id="developerToolbar">
+        <?php foreach ($this->getItems() as $item): ?>
+          <?php echo $item->render(); ?>
+        <?php endforeach ?>
+    </ul>
+    <?php endif ?>
+</div>
+
+<?php foreach ($this->getItems() as $item): ?>
+  <?php if ($item->getContent()): ?>
+    <div class="developerToolbarDetails" id="developerToolbarDetails_<?php echo $item->getName(); ?>" style="display:none;">
+      <?php echo $item->renderContent(); ?>
+    </div>
+  <?php endif ?>
+<?php endforeach ?>
