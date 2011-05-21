@@ -15,7 +15,7 @@
  * @category    Wee
  * @package     Wee_DeveloperToolbar
  * @author      Stefan Wieczorek <info@mgt-modules.com>
- * @copyright   Copyright (c) 2010 (http://www.mgt-modules.com)
+ * @copyright   Copyright (c) 2011 (http://www.mgt-modules.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -24,7 +24,7 @@ class Wee_DeveloperToolbar_Block_Toolbar_Item_Info extends Wee_DeveloperToolbar_
     public function __construct($name, $label = '')
     {
         parent::__construct($name, $label);
-        $this->setIcon(Mage::getDesign()->getSkinUrl('images/developertoolbar/info.png'));
-        $this->content = new Wee_DeveloperToolbar_Block_TabContainer_Info('info');
+        $this->setIcon(Mage::getDesign()->getSkinUrl('images/wee_developertoolbar/info.png'));
+        $this->_content = new Wee_DeveloperToolbar_Block_TabContainer_Info('info');
     }
 }

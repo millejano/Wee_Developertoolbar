@@ -15,7 +15,7 @@
  * @category    Wee
  * @package     Wee_DeveloperToolbar
  * @author      Stefan Wieczorek <info@mgt-modules.com>
- * @copyright   Copyright (c) 2010 (http://www.mgt-modules.com)
+ * @copyright   Copyright (c) 2011 (http://www.mgt-modules.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -27,7 +27,7 @@ class Wee_DeveloperToolbar_Block_Tab_Request extends Wee_DeveloperToolbar_Block_
     public function __construct($name, $label)
     {
         parent::__construct($name, $label);
-        $this->setTemplate('developertoolbar/tab/request.phtml');
+        $this->setTemplate('wee_developertoolbar/tab/request.phtml');
         $this->setIsActive(true);
         $this->_request = Mage::app()->getRequest();
         $this->_frontController = Mage::app()->getFrontController();

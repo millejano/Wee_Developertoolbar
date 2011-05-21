@@ -15,14 +15,14 @@
  * @category    Wee
  * @package     Wee_DeveloperToolbar
  * @author      Stefan Wieczorek <info@mgt-modules.com>
- * @copyright   Copyright (c) 2010 (http://www.mgt-modules.com)
+ * @copyright   Copyright (c) 2011 (http://www.mgt-modules.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
 class Wee_DeveloperToolbar_IndexController extends Mage_Core_Controller_Front_Action
 {
-	const SHOP_SCOPE = 'stores';
-	
+    const SHOP_SCOPE = 'stores';
+    
     public function indexAction()
     {
         if ($this->getRequest()->isPost()) {
@@ -60,8 +60,8 @@ class Wee_DeveloperToolbar_IndexController extends Mage_Core_Controller_Front_Ac
 
         $cacheTypes = array_keys(Mage::helper('core')->getCacheTypes());
         $enable = array();
-        foreach ($cacheTypes as $type) {            
-            $enable[$type] = 0;                 
+        foreach ($cacheTypes as $type) {
+            $enable[$type] = 0;
         }
         Mage::app()->saveUseCache($enable);
     }

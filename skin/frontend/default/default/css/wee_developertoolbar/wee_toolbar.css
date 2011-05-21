@@ -1,5 +1,5 @@
 
-#developerToolbarContainer {
+#weeDeveloperToolbarContainer {
   position:absolute;
   top:0px;
   right:0px;
@@ -12,37 +12,37 @@
   padding:2px 0px;
 }
  
-#developerToolbarContainer a {
+#weeDeveloperToolbarContainer a {
   text-decoration:none;
   color:#666666;    
 }
  
-#developerToolbarContainer img.logo {
+#weeDeveloperToolbarContainer img.magentoLogo {
   float:left;
   padding:0px 8px 0px 8px; 
   cursor:pointer;
 }
  
-#developerToolbarContainer ul {
+#weeDeveloperToolbarContainer ul {
   float:left;
   padding:0px 10px 0px 8px; 
 }
  
-#developerToolbarContainer ul li {
+#weeDeveloperToolbarContainer ul li {
   float:left; 
   line-height:22px;
   padding:0px 15px 0px 0px;
 }
 
-#developerToolbarContainer ul li.content {
+#weeDeveloperToolbarContainer ul li.content {
   cursor:pointer;
 }
  
-#developerToolbarContainer ul li img {
+#weeDeveloperToolbarContainer ul li img {
   padding:3px 0px 0px 0px; 
 }
 
-#developerToolbarContainer ul li.version {
+#weeDeveloperToolbarContainer ul li.version {
   background:#666666;
   opacity:0.8;
   color:#FFFFFF;
@@ -50,7 +50,7 @@
   margin:0px 9px 0px 0px;
 }
  
-.developerToolbarDetails {
+.weeDeveloperToolbarDetails {
   position:absolute;
   top:0px;
   left:0px;
@@ -117,7 +117,7 @@ div.tabContainer ul.tabContainer li a:hover  {
   background:#DDDDDD;
 }
 
-span.developerToolbarLogInfo {
+span.weeDeveloperToolbarLogInfo {
   font-weight:bold;
   color:#f00036;
 }
@@ -166,7 +166,7 @@ span.developerToolbarLogInfo {
 #tabContent_blocks ul li a {
   text-decoration:none;
   color:#666666;
-  background:url(/skin/frontend/default/default/images/developertoolbar/bullet_toggle_plus.png) no-repeat 0 1px; 
+  background:url(/skin/frontend/default/default/images/wee_developertoolbar/bullet_toggle_plus.png) no-repeat 0 1px; 
   padding:0px 0px 0px 15px;
 }
 

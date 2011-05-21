@@ -7,12 +7,12 @@
     </modules>
     <global>
         <blocks>
-            <developertoolbar>
+            <wee_developertoolbar>
                 <class>Wee_DeveloperToolbar_Block</class>
-            </developertoolbar>
-            <developertoolbar_item>
+            </wee_developertoolbar>
+            <wee_developertoolbar_item>
                 <class>Wee_DeveloperToolbar_Block_Toolbar_Item</class>
-            </developertoolbar_item>
+            </wee_developertoolbar_item>
             <core>
                 <rewrite>
                     <profiler>Wee_DeveloperToolbar_Block_Profiler</profiler>
@@ -20,11 +20,11 @@
             </core>
         </blocks>
         <helpers>
-            <developertoolbar>
+            <wee_developertoolbar>
                 <rewrite>
                     <data>Wee_DeveloperToolbar_Helper_Data</data>
                 </rewrite>
-            </developertoolbar>
+            </wee_developertoolbar>
         </helpers>
         <models>
             <core>
@@ -36,19 +36,19 @@
     </global>
     <frontend>
         <routers>
-            <developertoolbar>
+            <wee_developertoolbar>
                 <use>standard</use>
                 <args>
                     <module>Wee_DeveloperToolbar</module>
                     <frontName>developertoolbar</frontName>
                 </args>
-            </developertoolbar>
+            </wee_developertoolbar>
         </routers>
         <layout>
             <updates>
-                <developertoolbar>
-                    <file>developertoolbar.xml</file>
-                </developertoolbar>
+                <wee_developertoolbar>
+                    <file>wee_developertoolbar.xml</file>
+                </wee_developertoolbar>
             </updates>
         </layout>
     </frontend>

@@ -15,17 +15,16 @@
  * @category    Wee
  * @package     Wee_DeveloperToolbar
  * @author      Stefan Wieczorek <info@mgt-modules.com>
- * @copyright   Copyright (c) 2010 (http://www.mgt-modules.com)
+ * @copyright   Copyright (c) 2011 (http://www.mgt-modules.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
 class Wee_DeveloperToolbar_Block_Tab_Blocks extends Wee_DeveloperToolbar_Block_Tab
 {
-
     public function __construct($name, $label)
     {
         parent::__construct($name, $label);
-        $this->setTemplate('developertoolbar/tab/blocks.phtml');
+        $this->setTemplate('wee_developertoolbar/tab/blocks.phtml');
     }
     
     public function getRootBlock()

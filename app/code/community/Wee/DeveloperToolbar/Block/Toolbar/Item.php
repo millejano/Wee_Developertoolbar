@@ -15,72 +15,72 @@
  * @category    Wee
  * @package     Wee_DeveloperToolbar
  * @author      Stefan Wieczorek <info@mgt-modules.com>
- * @copyright   Copyright (c) 2010 (http://www.mgt-modules.com)
+ * @copyright   Copyright (c) 2011 (http://www.mgt-modules.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
 class Wee_DeveloperToolbar_Block_Toolbar_Item extends Wee_DeveloperToolbar_Block_Template
 {
-    protected $name;
-    protected $content;
-    protected $label;
-    protected $icon;
+    protected $_name;
+    protected $_content;
+    protected $_label;
+    protected $_icon;
     
     public function __construct($name, $label = '')
     {
         parent::__construct();
-        $this->name = $name;
+        $this->_name = $name;
         if ($label) {
-            $this->label = $label;
+            $this->_label = $label;
         }
         if (!$this->hasData('template')) {
-            $this->setTemplate('developertoolbar/item.phtml');
+            $this->setTemplate('wee_developertoolbar/item.phtml');
         }
     }
     
     public function getName()
     {
-        return $this->name;
+        return $this->_name;
     }
     
     public function setName($name)
     {
-        $this->name = $name;
+        $this->_name = $name;
     }
     
     public function getLabel()
     {
-        return $this->label;
+        return $this->_label;
     }
     
     public function setLabel($label)
     {
-        $this->label = $label;
+        $this->_label = $label;
     }
     
     public function getIcon()
     {
-        return $this->icon;
+        return $this->_icon;
     }
     
     public function setIcon($icon)
     {
-        $this->icon = $icon;
+        $this->_icon = $icon;
     }
  
     public function getContent()
     {
-        return $this->content;
+        return $this->_content;
     }
     
     public function setContent(Mage_Core_Block_Abstract $content)
     {
-        $this->content = $content;
+        $this->_content = $content;
     }
     
     public function renderContent()
     {
-    	return $this->content->toHtml();
+    	return $this->_content->toHtml();
     }
     
     public function render()

@@ -15,18 +15,13 @@
  * @category    Wee
  * @package     Wee_DeveloperToolbar
  * @author      Stefan Wieczorek <info@mgt-modules.com>
- * @copyright   Copyright (c) 2010 (http://www.mgt-modules.com)
+ * @copyright   Copyright (c) 2011 (http://www.mgt-modules.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
 class Wee_DeveloperToolbar_Block_Toolbar extends Wee_DeveloperToolbar_Block_Template
 {
     protected $_items = array();
-    
-    protected $jsFiles = array(
-        'developertoolbar/jquery-1.6.min.js',
-        'developertoolbar/developertoolbar.js',
-    );
 
     public function __construct()
     {
@@ -51,12 +46,5 @@ class Wee_DeveloperToolbar_Block_Toolbar extends Wee_DeveloperToolbar_Block_Temp
     protected function getItems()
     {
         return $this->_items;
-    }
-    
-    protected function _prepareLayout()
-    {
-        foreach ($this->jsFiles as $file) {
-            $this->getLayout()->getBlock('head')->addJs($file);    
-        }
     }
 }

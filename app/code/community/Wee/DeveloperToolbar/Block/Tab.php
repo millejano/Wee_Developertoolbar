@@ -15,51 +15,51 @@
  * @category    Wee
  * @package     Wee_DeveloperToolbar
  * @author      Stefan Wieczorek <info@mgt-modules.com>
- * @copyright   Copyright (c) 2010 (http://www.mgt-modules.com)
+ * @copyright   Copyright (c) 2011 (http://www.mgt-modules.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
 class Wee_DeveloperToolbar_Block_Tab extends Wee_DeveloperToolbar_Block_Template
 {
-    protected $name;
-    protected $label;
-    protected $isActive = false;
+    protected $_name;
+    protected $_label;
+    protected $_isActive = false;
 
     public function __construct($name, $label)
     {
         parent::__construct();
-        $this->name = $name;
-        $this->label = $label;
+        $this->_name = $name;
+        $this->_label = $label;
     }
     
     public function isActive()
     {
-        return $this->isActive;
+        return $this->_isActive;
     }
     
     public function setIsActive($flag)
     {
-        $this->isActive = (bool)$flag;    
+        $this->_isActive = (bool)$flag;    
     }
     
     public function getName()
     {
-        return $this->name;
+        return $this->_name;
     }
     
     public function setName($name)
     {
-        $this->name = $name;
+        $this->_name = $name;
     }
     
     public function getLabel()
     {
-        return $this->label;
+        return $this->_label;
     }
     
     public function setLabel($label)
     {
-        $this->label = $label;
+        $this->_label = $label;
     }
     
     public function render()

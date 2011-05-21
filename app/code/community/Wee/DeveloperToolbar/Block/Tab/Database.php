@@ -15,20 +15,20 @@
  * @category    Wee
  * @package     Wee_DeveloperToolbar
  * @author      Stefan Wieczorek <info@mgt-modules.com>
- * @copyright   Copyright (c) 2010 (http://www.mgt-modules.com)
+ * @copyright   Copyright (c) 2011 (http://www.mgt-modules.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
 class Wee_DeveloperToolbar_Block_Tab_Database extends Wee_DeveloperToolbar_Block_Tab
 {
     protected $_profiler;
-    protected $longestQueryTime = 0;
-    protected $longestQuery;
+    protected $_longestQueryTime = 0;
+    protected $_longestQuery;
     
     public function __construct($name, $label)
     {
         parent::__construct($name, $label);
-        $this->setTemplate('developertoolbar/tab/database.phtml');
+        $this->setTemplate('wee_developertoolbar/tab/database.phtml');
         $this->setIsActive(true);
         $this->_profiler = Mage::getSingleton('core/resource')->getConnection('core_write')->getProfiler();
     }
@@ -43,23 +43,23 @@ class Wee_DeveloperToolbar_Block_Tab_Database extends Wee_DeveloperToolbar_Block
             if ($query->getElapsedSecs() > $this->longestQueryTime) {
                 $this->longestQueryTime  = $query->getElapsedSecs();
                 $this->longestQuery = $query->getQuery();
-            }    
+            }
         }
     }
     
     public function getLongestQueryTime()
     {
-        if (!$this->longestQueryTime) {
+        if (!$this->_longestQueryTime) {
            $this->_getLongestQuery();    
         }
-        return $this->longestQueryTime;
+        return $this->_longestQueryTime;
     }
     
     public function getLongestQuery()
     {
-        if (!$this->longestQuery) {
+        if (!$this->_longestQuery) {
             $this->_getLongestQuery();
         }
-        return $this->longestQuery;
+        return $this->_longestQuery;
     }
 }

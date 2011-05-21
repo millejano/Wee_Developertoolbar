@@ -1,7 +1,7 @@
-<div class="developerToolbar" id="developerToolbarContainer">
-  <img class="logo" src="<?php echo Mage::getDesign()->getSkinUrl('images/developertoolbar/logo.png'); ?>" alt="" />
+<div class="weeDeveloperToolbar" id="weeDeveloperToolbarContainer">
+  <img class="magentoLogo" src="<?php echo Mage::getDesign()->getSkinUrl('images/wee_developertoolbar/logo.png'); ?>" alt="" />
     <?php if ($this->getItems()): ?>
-    <ul id="developerToolbar">
+    <ul id="weeDeveloperToolbar">
         <?php foreach ($this->getItems() as $item): ?>
           <?php echo $item->render(); ?>
         <?php endforeach ?>
@@ -11,7 +11,7 @@
 
 <?php foreach ($this->getItems() as $item): ?>
   <?php if ($item->getContent()): ?>
-    <div class="developerToolbarDetails" id="developerToolbarDetails_<?php echo $item->getName(); ?>" style="display:none;">
+    <div class="weeDeveloperToolbarDetails" id="weeDeveloperToolbarDetails_<?php echo $item->getName(); ?>" style="display:none;">
       <?php echo $item->renderContent(); ?>
     </div>
   <?php endif ?>

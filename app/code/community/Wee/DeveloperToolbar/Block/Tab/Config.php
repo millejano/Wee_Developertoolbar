@@ -15,7 +15,7 @@
  * @category    Wee
  * @package     Wee_DeveloperToolbar
  * @author      Stefan Wieczorek <info@mgt-modules.com>
- * @copyright   Copyright (c) 2010 (http://www.mgt-modules.com)
+ * @copyright   Copyright (c) 2011 (http://www.mgt-modules.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
@@ -24,7 +24,7 @@ class Wee_DeveloperToolbar_Block_Tab_Config extends Wee_DeveloperToolbar_Block_T
     public function __construct($name, $label)
     {
         parent::__construct($name, $label);
-        $this->setTemplate('developertoolbar/tab/config.phtml');
+        $this->setTemplate('wee_developertoolbar/tab/config.phtml');
     }
     
     public function isFrontendHintsEnabled()

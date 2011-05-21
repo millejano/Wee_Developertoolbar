@@ -35,19 +35,19 @@ jQuery.noConflict();
 
 jQuery(document).ready(function(){
 
-  if (Cookie.read("developertoolbar") == 0)    {
-    jQuery("#developerToolbar").hide();    
+  if (Cookie.read("wee_developertoolbar") == 0)    {
+    jQuery("#weeDeveloperToolbar").hide();    
   }
 
-  jQuery("#developerToolbarContainer img:first").click(function() {
-    jQuery(".developerToolbarDetails").hide();
-    jQuery("#developerToolbar").toggle();
-    var display = jQuery("#developerToolbar").attr("style");
+  jQuery("#weeDeveloperToolbarContainer img:first").click(function() {
+    jQuery(".weeDeveloperToolbarDetails").hide();
+    jQuery("#weeDeveloperToolbar").toggle();
+    var display = jQuery("#weeDeveloperToolbar").attr("style");
     var toolbarHiddenExpression = /(none)/;
     if (toolbarHiddenExpression.exec(display)) {
-      Cookie.write("developertoolbar", 0);
+      Cookie.write("wee_developertoolbar", 0);
     } else {
-      Cookie.write("developertoolbar", 1);    
+      Cookie.write("wee_developertoolbar", 1);    
     }
   });    
   
@@ -63,17 +63,17 @@ jQuery(document).ready(function(){
     jQuery("#tabContent_"+id).show();
   });
     
-  jQuery("#developerToolbar li.content").click(function() {
+  jQuery("#weeDeveloperToolbar li.content").click(function() {
     var id = jQuery(this).attr("id").split("_");
     id = id[1];
-    jQuery(".developerToolbarDetails").each(function(e) {
-      var toolbarDetailContainer = jQuery(".developerToolbarDetails").get(e);
-      if (jQuery(toolbarDetailContainer).attr("id") != "developerToolbarDetails_"+id) {
+    jQuery(".weeDeveloperToolbarDetails").each(function(e) {
+      var toolbarDetailContainer = jQuery(".weeDeveloperToolbarDetails").get(e);
+      if (jQuery(toolbarDetailContainer).attr("id") != "weeDeveloperToolbarDetails_"+id) {
         jQuery(toolbarDetailContainer).hide();     
       }
     });
-    if (jQuery("#developerToolbarDetails_"+id)) {
-      jQuery("#developerToolbarDetails_"+id).toggle();    
+    if (jQuery("#weeDeveloperToolbarDetails_"+id)) {
+      jQuery("#weeDeveloperToolbarDetails_"+id).toggle();    
     }
   });
   
