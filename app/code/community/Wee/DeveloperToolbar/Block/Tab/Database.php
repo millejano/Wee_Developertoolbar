@@ -40,9 +40,9 @@ class Wee_DeveloperToolbar_Block_Tab_Database extends Wee_DeveloperToolbar_Block
     protected function _getLongestQuery()
     {
         foreach ($this->_profiler->getQueryProfiles() as $query) {
-            if ($query->getElapsedSecs() > $this->longestQueryTime) {
-                $this->longestQueryTime  = $query->getElapsedSecs();
-                $this->longestQuery = $query->getQuery();
+            if ($query->getElapsedSecs() > $this->_longestQueryTime) {
+                $this->_longestQueryTime  = $query->getElapsedSecs();
+                $this->_longestQuery = $query->getQuery();
             }
         }
     }
