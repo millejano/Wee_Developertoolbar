@@ -8,7 +8,7 @@ Developertoolbar for magento professionals
 ## INSTALLATION
 
 * copy all files to your magento installation
-* clear cache
+* Clear the cache in Admin > System > Cache Management 
 * edit index.php and enable the profiler Varien_Profiler::enable();
 * have fun and give feedback :)
 
