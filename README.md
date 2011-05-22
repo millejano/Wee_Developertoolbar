@@ -22,7 +22,7 @@ Developertoolbar for magento professionals
 
 * Config: enable/disable frontend hints, inline translation and cache clearing
 
-* PHP-Info: output of phpinfo().
+* PHP-Info: output of phpinfo()
 
 * Profiling: output of Varien_Profiler with function execution time, function count and memory usage
 
