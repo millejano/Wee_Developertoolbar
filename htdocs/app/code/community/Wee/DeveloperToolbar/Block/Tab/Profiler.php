@@ -21,28 +21,25 @@
 
 class Wee_DeveloperToolbar_Block_Tab_Profiler extends Wee_DeveloperToolbar_Block_Tab
 {
-    protected $_profiler;
-    
     public function __construct($name, $label)
     {
         parent::__construct($name, $label);
         $this->setTemplate('wee_developertoolbar/tab/profiler.phtml');
         $this->setIsActive(true);
     }
+
+    public function getTimers()
+    {
+        $timers = Varien_Profiler::getTimers();
+        foreach ($timers as $key => $value) {
+            $timers[$key]['sum'] = Varien_Profiler::fetch($key,'sum');
+        }
+        uasort($timers, array('self', 'compareTimers'));
+        return $timers;
+    }
     
     static public function compareTimers(array $timerA, array $timerB)
     {
-       return ($timerA['sum'] < $timerB['sum']);
-    }
-    
-    public function getTimers($sorted = true)
-    {
-        $timers = Varien_Profiler::getTimers();
-        if (false === $sorted) {
-            return $timers;
-        } else {
-        	uasort($timers, array('self', 'compareTimers'));
-            return $timers;
-        }
+       return $timerA['sum'] < $timerB['sum'];
     }
 }

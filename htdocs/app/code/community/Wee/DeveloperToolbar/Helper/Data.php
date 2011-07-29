@@ -21,7 +21,8 @@
 
 class Wee_DeveloperToolbar_Helper_Data extends Mage_Core_Helper_Abstract
 {
-    public static function formatBytes($size, $praefix=true, $short= true) {
+    public static function formatBytes($size, $praefix=true, $short= true) 
+    {
         if ($praefix === true) {
           if($short === true){
             $norm = array('B', 'kB', 'MB', 'GB', 'TB', 'PB', 
