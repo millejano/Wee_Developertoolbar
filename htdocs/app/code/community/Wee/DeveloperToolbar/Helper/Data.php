@@ -77,4 +77,9 @@ class Wee_DeveloperToolbar_Helper_Data extends Mage_Core_Helper_Abstract
     {
         return preg_replace('/\b(UPDATE|SET|SELECT|FROM|AS|LIMIT|ASC|COUNT|DESC|WHERE|LEFT JOIN|INNER JOIN|RIGHT JOIN|ORDER BY|GROUP BY|IN|LIKE|DISTINCT|DELETE|INSERT|INTO|VALUES)\b/', '<span class="weeDeveloperToolbarLogInfo">\\1</span>', $sql);
     }
+    
+    static public function getMediaUrl()
+    {
+    	return Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA);
+    }
 }

@@ -44,7 +44,7 @@ class Wee_DeveloperToolbar_Block_Tab_Blocks extends Wee_DeveloperToolbar_Block_T
                   continue;
                 }
                 $hasChildren =  $child->getChild() ? true : false;
-                $out .= '<li '.($hasChildren ? 'class="root"' : '').'>';
+                $out .= '<li '.($hasChildren ? 'class="rootBlock"' : '').'>';
                 $out .= '<a href="javascript:void(0);" class="toggleBlogProperties">'.$child->getNameInLayout().'</a>';
                 $out .= $this->printBlockProperties($child);
                 if ($hasChildren) {

@@ -66,7 +66,8 @@
 }
  
 #weeDeveloperToolbarContainer ul li img {
-  padding:3px 0px 0px 0px; 
+  padding:3px 0px 0px 0px;
+  vertical-align: top;
 }
 
 #weeDeveloperToolbarContainer ul li.version {
@@ -193,7 +194,7 @@ span.weeDeveloperToolbarLogInfo {
 #tabContent_blocks ul li a {
   text-decoration:none;
   color:#666666;
-  background:url(/skin/frontend/default/default/images/wee_developertoolbar/bullet_toggle_plus.png) no-repeat 0 1px; 
+  background:url(/media/wee_developertoolbar/bullet_toggle_plus.png) no-repeat 0 1px; 
   padding:0px 0px 0px 15px;
 }
 
@@ -203,6 +204,6 @@ span.weeDeveloperToolbarLogInfo {
   padding:0px 0px 0px 5px;
 }
 
-#tabContent_blocks ul li.root {
+#tabContent_blocks ul li.rootBlock {
   background:#DDDDDD;
 }
