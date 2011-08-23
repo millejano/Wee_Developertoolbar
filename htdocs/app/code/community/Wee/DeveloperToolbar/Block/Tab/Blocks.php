@@ -14,8 +14,8 @@
  *
  * @category    Wee
  * @package     Wee_DeveloperToolbar
- * @author      Stefan Wieczorek <info@mgt-commerce.com>
- * @copyright   Copyright (c) 2011 (http://www.mgt-modules.com)
+ * @author      Stefan Wieczorek <stefan.wieczorek@mgt-commerce.com>
+ * @copyright   Copyright (c) 2011 (http://www.mgt-commerce.com)
  * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
