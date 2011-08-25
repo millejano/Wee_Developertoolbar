@@ -21,10 +21,17 @@
 
 class Wee_DeveloperToolbar_Block_Tab_PhpInfo extends Wee_DeveloperToolbar_Block_Tab
 {
+    const CACHE_LIFETIME = 15000;
+    const CACHE_KEY = 'DEVELOPER_TOOLBAR_TAB_PHPINFO';
+    
     public function __construct($name, $label)
     {
         parent::__construct($name, $label);
         $this->setTemplate('wee_developertoolbar/tab/phpinfo.phtml');
+        $this->addData(array(
+            'cache_key'      => self::CACHE_KEY,
+            'cache_lifetime' => self::CACHE_LIFETIME,
+        ));
     }
     
     public function showPhpInfo()

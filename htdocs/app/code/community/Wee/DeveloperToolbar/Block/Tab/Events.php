@@ -21,6 +21,9 @@
 
 class Wee_DeveloperToolbar_Block_Tab_Events extends Wee_DeveloperToolbar_Block_Tab
 {
+    const CACHE_LIFETIME = 15000;
+    const CACHE_KEY = 'DEVELOPER_TOOLBAR_TAB_EVENTS';
+
     protected $_eventAreas = array('global', 'adminhtml', 'frontend');
     protected $_events = array();
     
@@ -28,11 +31,16 @@ class Wee_DeveloperToolbar_Block_Tab_Events extends Wee_DeveloperToolbar_Block_T
     {
         parent::__construct($name, $label);
         $this->setTemplate('wee_developertoolbar/tab/events.phtml');
+        $this->addData(array(
+            'cache_key'      => self::CACHE_KEY,
+            'cache_lifetime' => self::CACHE_LIFETIME,
+        ));
     }
-    
+
     public function getEvents()
     {
         if (!$this->_events) {
+        	Varien_Profiler::start('muha');
             foreach ($this->_eventAreas as $eventArea) {
                 $eventConfig = Mage::app()->getConfig()->getNode(sprintf('%s/events', $eventArea));
                 if ($eventConfig instanceof Mage_Core_Model_Config_Element) {
@@ -49,6 +57,7 @@ class Wee_DeveloperToolbar_Block_Tab_Events extends Wee_DeveloperToolbar_Block_T
                    }
                 }
             }
+            Varien_Profiler::stop('muha');
         }
         return $this->_events;
     }
