@@ -83,5 +83,13 @@ jQuery(document).ready(function(){
     jQuery(this).next("ul.blockProperties").toggle(); 
   });
   
+  jQuery("#tabContent_blocks a.toggleBlogProperties").click(function() {
+	    jQuery(this).next("ul.eventProperties").toggle(); 
+  });
+  
+  jQuery("#tabContent_events a.toggleBlogProperties").click(function() {
+	    jQuery(this).next("ul.events").toggle(); 
+});
+  
 });
 

@@ -172,38 +172,33 @@ span.weeDeveloperToolbarLogInfo {
   background:#DDDDDD;     
 }
 
-#tabContent_blocks {
+#tabContent_blocks, #tabContent_events {
   width:550px;
 }
 
-#tabContent_blocks ul {
-  padding:10px;
+#tabContent_blocks ul, #tabContent_events ul {
+  padding:5px;
   background:#FFFFFF;
 }
 
-#tabContent_blocks ul.blockProperties {
+#tabContent_blocks ul.blockProperties, #tabContent_events ul.areaEvents {
   padding:2px;
-  font-size:10px;
+  font-size:11px;
   border:1px solid silver;
 }
 
-#tabContent_blocks ul li {
+#tabContent_blocks ul li, #tabContent_events ul li {
   padding:0px 10px; 
 }
 
-#tabContent_blocks ul li a {
+#tabContent_blocks ul li a, #tabContent_events ul li a {
   text-decoration:none;
   color:#666666;
   background:url(/media/wee_developertoolbar/bullet_toggle_plus.png) no-repeat 0 1px; 
   padding:0px 0px 0px 15px;
 }
 
-#tabContent_blocks span.template {
-  font-size:10px;
-  color:#666666;
-  padding:0px 0px 0px 5px;
-}
-
-#tabContent_blocks ul li.rootBlock {
+#tabContent_blocks ul li.rootElement, #tabContent_events ul li.rootElement  {
   background:#DDDDDD;
 }
+
