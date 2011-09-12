@@ -35,3 +35,12 @@ Developertoolbar for magento professionals
 * Additional Information: version information, page execution time and overall memory usage
 
 * DB-Profiler: Number of executed queries, average query length, queries per second, longest query length, longest query and detailed query listing including simple syntax highlighting of SQL
+
+## CHANGELOG
+
+2.0.0.0
+- add handles and events/observers in info block
+- toolbar now also available for backend
+
+1.5.0.0
+- fixed bug in profiler sort order
