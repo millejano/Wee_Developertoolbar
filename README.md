@@ -3,7 +3,7 @@ Developertoolbar for magento professionals
 
 ## DEMO
 
-[Url: http://developertoolbar.mgt-modules.com/](http://developertoolbar.mgt-modules.com/)
+[Url: http://developertoolbar.mgt-commerce.com/](http://developertoolbar.mgt-commerce.com/)
 
 ## INSTALLATION
 
@@ -14,9 +14,15 @@ Developertoolbar for magento professionals
 
 ## FEATURES
 
+* Professional toolbar for frontend and backend
+
 * Requests: involved controller classes, modules, actions and request parameters
 
 * General Info: website id, website name, store id, store name, storeview id, storeview code, storeview name and configured caching method
+
+* Handles: Displays all handles
+
+* Events/Observer: Shows all events with it's observers
 
 * Blocks: overview of block nesting
 
