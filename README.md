@@ -39,8 +39,10 @@ Developertoolbar for magento professionals
 ## CHANGELOG
 
 2.0.0.0
-- add handles and events/observers in info block
-- toolbar now also available for backend
+
+*  add handles and events/observers in info block
+*  toolbar now also available for backend
 
 1.5.0.0
-- fixed bug in profiler sort order
+
+* fixed bug in profiler sort order
