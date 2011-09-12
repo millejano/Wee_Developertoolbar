@@ -41,7 +41,7 @@ Developertoolbar for magento professionals
 2.0.0.0
 
 *  add handles and events/observers in info block
-*  toolbar now also available for backend
+*  developer toolbar now available for backend
 
 1.5.0.0
 
