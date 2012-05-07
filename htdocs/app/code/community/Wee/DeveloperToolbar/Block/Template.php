@@ -21,7 +21,7 @@
 
 class Wee_DeveloperToolbar_Block_Template extends Mage_Core_Block_Template
 {
-    public function fetchView($fileName)
+   public function fetchView($fileName)
     {
         Varien_Profiler::start($fileName);
 

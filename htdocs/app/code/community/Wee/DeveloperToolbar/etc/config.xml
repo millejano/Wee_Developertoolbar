@@ -71,4 +71,11 @@
             </updates>
         </layout>
     </frontend>
+    	<default>
+		<dev>
+			<wee_developertoolbar>
+				<enabled>0</enabled>
+			</wee_developertoolbar>
+		</dev>
+	</default>
 </config>

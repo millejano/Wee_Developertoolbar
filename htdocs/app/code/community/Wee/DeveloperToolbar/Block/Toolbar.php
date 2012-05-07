@@ -25,7 +25,13 @@ class Wee_DeveloperToolbar_Block_Toolbar extends Wee_DeveloperToolbar_Block_Temp
 
     public function __construct()
     {
+    	// do something if enabled
+    	if (Mage::helper('wee_developertoolbar')->isEnabled()) {
         $this->_addDefaultItems();  
+    	}
+    	else {
+    	  // silence is golden
+    	}
     }
     
     protected function _addDefaultItems()

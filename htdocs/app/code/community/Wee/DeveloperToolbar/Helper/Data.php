@@ -21,6 +21,8 @@
 
 class Wee_DeveloperToolbar_Helper_Data extends Mage_Core_Helper_Abstract
 {
+		const XML_PATH_ENABLED   = 'dev/wee_developertoolbar/enabled';
+		
     static public function formatBytes($bytes)  
     { 
         $size = $bytes / 1024; 
@@ -53,5 +55,14 @@ class Wee_DeveloperToolbar_Helper_Data extends Mage_Core_Helper_Abstract
     static public function getMediaUrl()
     {
     	return Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA);
+    }
+    
+		/**
+	   * 
+	   * checks if developer tool is activated, 
+	   */  
+    public function isEnabled()
+    {
+    	return Mage::getStoreConfig( self::XML_PATH_ENABLED );
     }
 }

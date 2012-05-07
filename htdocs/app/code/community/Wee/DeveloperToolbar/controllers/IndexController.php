@@ -21,6 +21,7 @@
 
 class Wee_DeveloperToolbar_IndexController extends Mage_Core_Controller_Front_Action
 {
+		// TODO add log, js, seo url config param
     const SHOP_SCOPE = 'stores';
     
     public function indexAction()
