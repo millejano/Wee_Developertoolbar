@@ -3,7 +3,7 @@
     <default>
         <reference name="head">
         		<!-- + render template only if enabled and jquery support is needed -->
-            <action method="addJs" ifconfig="dev/wee_developertoolbar/jquery_support"><script>wee_developertoolbar/jquery-1.6.min.js</script></action>
+            <action method="addJs" ifconfig="dev/wee_developertoolbar/jquery_frontend"><script>wee_developertoolbar/jquery-1.6.4.min.js</script></action>
         		<!-- = render template only if enabled and jquery support is needed -->
         		<!-- + render template only if enabled -->
             <action method="addItem" ifconfig="dev/wee_developertoolbar/enabled"><type>js_css</type><name>wee_developertoolbar/wee_developertoolbar.css</name></action>
